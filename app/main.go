@@ -18,7 +18,7 @@ func Index(w http.ResponseWriter, r *http.Request) {
 	msg := Hello{}
 	res := []Hello{}
 
-	msg.Mensagem = "Hello World"
+	msg.Mensagem = "Hello World Teste"
 	res = append(res, msg)
 	tmpl.ExecuteTemplate(w, "Index", res)
 }
